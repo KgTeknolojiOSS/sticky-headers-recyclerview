@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.yunuseker'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion as Integer
@@ -17,11 +19,6 @@ android {
 }
 
 dependencies {
-    compile "com.android.support:recyclerview-v7:${rootProject.supportLibsVersion}"
+    implementation "com.android.support:recyclerview-v7:${rootProject.supportLibsVersion}"
 }
 
-apply from: 'gradle-maven-push.gradle'
-
-afterEvaluate {
-    androidJavadocs.classpath += project.android.libraryVariants.toList().first().javaCompile.classpath
-}
