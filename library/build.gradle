@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.yunuseker'
+group='com.github.KgTeknolojiOSS'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion as Integer
