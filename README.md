@@ -18,12 +18,17 @@ Here is a quick video of it in action (click to see the full video):
 
 Download
 --------
+```
+allprojects {
+	repositories {
+		maven { url 'https://jitpack.io' }
+	}
+}
+dependencies {
+	implementation 'com.github.KgTeknolojiOSS:sticky-headers-recyclerview:1.0.0'
+}
 
-Current version: [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.timehop.stickyheadersrecyclerview/library/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.timehop.stickyheadersrecyclerview/library)
-
-    compile 'com.timehop.stickyheadersrecyclerview:library:[latest.version.number]@aar'
-
-
+```
 Usage
 -----
 
